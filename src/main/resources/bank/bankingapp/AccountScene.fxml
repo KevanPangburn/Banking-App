@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #AFE1AF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.bankingapp.LoginSceneController">
+    <children>
+        <Label layoutX="173.0" layoutY="14.0" text="Banking App">
+            <font>
+                <Font name="System Italic" size="28.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameTextField" layoutX="176.0" layoutY="89.0" promptText="Username" />
+        <PasswordField fx:id="enterPasswordField" layoutX="175.0" layoutY="140.0" promptText="Password" />
+        <Label layoutX="86.0" layoutY="92.0" text="Username">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="88.0" layoutY="142.0" text="Password">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="loginButton" layoutX="175.0" layoutY="188.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="149.0" text="Login" />
+        <Button fx:id="registerButton" layoutX="175.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Register" />
+        <Button fx:id="cancelButton" layoutX="175.0" layoutY="290.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="149.0" text="Cancel" />
+        <Label fx:id="loginInvalidMessageLabel" alignment="CENTER" layoutX="155.0" layoutY="54.0" prefHeight="17.0" prefWidth="190.0" textFill="#f80101" />
+    </children>
+</AnchorPane>
