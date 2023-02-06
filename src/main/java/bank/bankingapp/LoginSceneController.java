@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
@@ -82,6 +83,8 @@ public class LoginSceneController implements Initializable {
             Parent root = FXMLLoader.load(getClass().getResource("RegistrationScene.fxml"));
             Stage registrationStage = new Stage();
             registrationStage.setScene(new Scene(root, 500, 400));
+            registrationStage.getIcons().add(new Image("file:src/main/resources/piggy.png"));
+            registrationStage.setTitle("Banking App");
             registrationStage.show();
 
             Stage loginStage = (Stage) cancelButton.getScene().getWindow();
@@ -99,6 +102,8 @@ public class LoginSceneController implements Initializable {
             Parent root = FXMLLoader.load(getClass().getResource("AccountScene.fxml"));
             Stage accountStage = new Stage();
             accountStage.setScene(new Scene(root, 500, 400));
+            accountStage.getIcons().add(new Image("file:src/main/resources/piggy.png"));
+            accountStage.setTitle("Banking App");
             accountStage.show();
 
             Stage loginStage = (Stage) cancelButton.getScene().getWindow();
