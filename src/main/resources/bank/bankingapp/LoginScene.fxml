@@ -24,7 +24,7 @@
             </font>
         </Label>
         <Button fx:id="loginButton" layoutX="175.0" layoutY="188.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="149.0" text="Login" />
-        <Button fx:id="registerButton" layoutX="175.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Register" />
+        <Button fx:id="registerButton" layoutX="175.0" layoutY="240.0" mnemonicParsing="false" onAction="#registrationScreen" prefHeight="25.0" prefWidth="149.0" text="Register" />
         <Button fx:id="cancelButton" layoutX="175.0" layoutY="290.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="149.0" text="Cancel" />
         <Label fx:id="loginInvalidMessageLabel" alignment="CENTER" layoutX="155.0" layoutY="54.0" prefHeight="17.0" prefWidth="190.0" textFill="#f80101" />
     </children>
