@@ -93,16 +93,19 @@ public class LoginSceneController implements Initializable {
 
     public void accountScreen() {
         try {
-
             Parent root = FXMLLoader.load(getClass().getResource("AccountScene.fxml"));
-            Stage registrationStage = new Stage();
-            registrationStage.setScene(new Scene(root, 500, 400));
-            registrationStage.show();
+            Stage accountStage = new Stage();
+            accountStage.setScene(new Scene(root, 500, 400));
+            accountStage.show();
+
+            Stage loginStage = (Stage) cancelButton.getScene().getWindow();
+            loginStage.close();
 
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
         }
     }
+
 
 }
